@@ -46,7 +46,7 @@ def init():
     first_update = False # trick to initialize the map only once
 
 # Initializing the last distance
-last_distance = 0
+last_distance = 10
 
 # Creating the car class (to understand "NumericProperty" and "ReferenceListProperty", see kivy tutorials: https://kivy.org/docs/tutorials/pong.html)
 
