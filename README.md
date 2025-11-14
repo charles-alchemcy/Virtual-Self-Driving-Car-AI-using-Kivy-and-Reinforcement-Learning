@@ -11,7 +11,8 @@ that make use of innovative user interfaces, such as multi-touch apps.
 
 [Kivy](https://kivy.org/#home)
 
-I used Kivy to make the car environment .
+I used Kivy to make the car environment.
+
 
 Then I used Experience Replay and Deep Q intuition to create an AI which uses 3 sensors in the virtual car to detect 'sand' i.e. out of it's road areas . If it runs on the sand it gets punishment and it tries not to repeat that again .
 
