@@ -21,7 +21,7 @@ class Network(nn.Module):
         self.input_size = input_size
         self.nb_action = nb_action
         self.fc1 = nn.Linear(input_size, 30)
-        self.fc2 = nn.Linear(30, nb_action)
+        self.fc2 = nn.Linear(30, 2 * nb_action)
     
     def forward(self, state):
         x = F.relu(self.fc1(state))
@@ -94,7 +94,8 @@ class Dqn():
     def save(self):
         torch.save({'state_dict': self.model.state_dict(),
                     'optimizer' : self.optimizer.state_dict(),
-                   }, 'last_brain.pth')
+                   }, 
+                   'last_brain_gt.pth')
     
     def load(self):
         if os.path.isfile('last_brain.pth'):
